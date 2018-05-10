@@ -51,7 +51,7 @@ Page({
     var id = home.getDataSet(event, 'id');
     var name = home.getDataSet(event, 'name');
     wx.navigateTo({
-      url: '../theme/theme?id=' + id + '&name=' + name
+      url: '../theme/theme?id=' + id + '&name=' + name +'?XDEBUG_SESSION_START=12018'
     })
   },
 
