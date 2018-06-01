@@ -1,3 +1,3 @@
 <!--pages/Fun-Flag.wxml-->
-<view> <text class='field'>flag:</text><input confirm-type='send'></input><button bindtap='bindconfirm'>提交</button></view>
+<view> <text class='field'>flag:</text><input confirm-type='send' bindtap='bindKeyInput'></input><button bindtap='bindconfirm' size='mini'>提交{{speData.ButName}}</button></view>
 

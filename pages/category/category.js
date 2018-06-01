@@ -1,5 +1,6 @@
 import { Category } from 'category-model.js';
 var category = new Category();
+var datatest={name:'ABC'};
 
 Page({
 
@@ -7,6 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    datatest,
     // categoryTypeArr: {}
     currentMenuIndex: 0,
     //字典，dictionary

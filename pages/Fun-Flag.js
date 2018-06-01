@@ -1,5 +1,6 @@
 Page({
   data: {
+    speData: { ButName: 'AAA', Buting:'BB'},
     focus: false,
     inputValue: ''
   },
@@ -9,14 +10,16 @@ Page({
     })
   },
   bindKeyInput: function (e) {
+    console.log(e);
     this.setData({
-      inputValue: e.detail.value
+      speData: { ButName: 'AA' }
     })
   },
   bindconfirm: function(e){
 
     this.setData({
-      FFF: e.detail.value
+      speData: { ButName: this.data.speData.Buting }
+      //e.detail.value
 
   })},
   bindReplaceInput: function (e) {
