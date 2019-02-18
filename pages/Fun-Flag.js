@@ -1,6 +1,9 @@
+
+import { funmodel } from 'Fun-Model.js';
+var fun=new funmodel();
 Page({
   data: {
-    speData: { ButName: 'AAA', Buting:'BB'},
+    speData: { ButName: '按钮初始名称',ButPSize:'mini',InputValue:''},
     focus: false,
     inputValue: ''
   },
@@ -10,18 +13,16 @@ Page({
     })
   },
   bindKeyInput: function (e) {
-    console.log(e);
+    this.data.speData.InputValue = e.detail.value;
     this.setData({
-      speData: { ButName: 'AA' }
-    })
+      speData: this.data.speData
+    }) 
   },
   bindconfirm: function(e){
-
+    fun.accWebserver(this.data.speData.InputValue);
     this.setData({
-      speData: { ButName: this.data.speData.Buting }
-      //e.detail.value
-
-  })},
+      speData: this.data.speData
+    }) },
   bindReplaceInput: function (e) {
     var value = e.detail.value
     var pos = e.detail.cursor

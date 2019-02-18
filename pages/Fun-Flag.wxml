@@ -1,3 +1,6 @@
 <!--pages/Fun-Flag.wxml-->
-<view> <text class='field'>flag:</text><input confirm-type='send' bindtap='bindKeyInput'></input><button bindtap='bindconfirm' size='mini'>提交{{speData.ButName}}</button></view>
-
+<view class='flag-box'>
+  <text class='field'>提交数据内容:</text>
+  <input confirm-type='send' bindblur='bindKeyInput' data-alpha-beta="444"></input>
+  <button class="weui-btn" type="warn" bindtap='bindconfirm' data-alpha-beta="444" size="{{speData.ButPSize}}">我在这{{speData.InputValue}}</button>
+</view>

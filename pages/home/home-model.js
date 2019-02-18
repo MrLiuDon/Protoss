@@ -8,7 +8,7 @@ class Home extends Base{
 
   getBannerData(id, callback){
     var params = {
-      url: 'banner/' + id +'?XDEBUG_SESSION_START=12018',
+      url: 'banner/' + id ,
       sCallback:function(res){
         callback && callback(res.items);
       }
